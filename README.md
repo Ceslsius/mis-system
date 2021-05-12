@@ -1,5 +1,8 @@
 ## MIS-SYSTEM
 
+基于vue2的管理系统
+后端使用node.js，附后端代码
+
 ### 技术栈
 
 1. Node v.12.x
