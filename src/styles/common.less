@@ -1,0 +1,33 @@
+/** 颜色定义 ---start--- */
+@c1e: #1e1e1e;
+@c24: #24b8b9;
+@ced: #ed7375;
+@c42: #425fe1;
+@c02: #02a94b;
+/** 颜色定义 ---end--- */
+
+/** 尺寸定义 ---start--- */
+
+/** 尺寸定义 ---end--- */
+
+/** 通用方法定义 ---start--- */
+.rel-cls() {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.abs-cls(@top: 0,@left: 0) {
+    display: block;
+    position: absolute;
+    top: @top;
+    left: @left;
+}
+.touch() {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/** 通用方法定义 ---end--- */

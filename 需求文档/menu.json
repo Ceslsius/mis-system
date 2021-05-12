@@ -1,0 +1,46 @@
+[
+    {
+        "id": "index",
+        "name": "首页",
+        "icon": "el-icon-house",
+        "children": [
+            {"id": "index01", "path": "/home", "name": "首页"}
+        ]
+    },
+    {
+        "id": "demand",
+        "name": "需求管理",
+        "icon": "el-icon-document",
+        "children": [
+            {"id": "demand01", "path": "/demand/list", "name": "需求列表"},
+            {"id": "demand02", "path": "/demand/company/approve", "name": "总部审批"},
+            {"id": "demand03", "path": "/demand/dept/approve", "name": "科室审批"}
+        ]
+    },
+    {
+        "id": "budget",
+        "name": "预算",
+        "icon": "el-icon-edit-outline",
+        "children": [
+            {"id": "budget01", "path": "/budget/apply", "name": "预算报审"},
+            {"id": "budget02", "path": "/budget/approve", "name": "预算审核"}
+        ]
+    },
+	{
+        "id": "fault",
+        "name": "故障",
+        "icon": "el-icon-suitcase",
+        "children": [
+            {"id": "fault01", "path": "/fault/apply", "name": "故障申报"},
+            {"id": "fault02", "path": "/fault/approve", "name": "故障处理"}
+        ]
+    },
+    {
+        "id": "human",
+        "name": "人员管理",
+        "icon": "el-icon-user",
+        "children": [
+            {"id": "human01", "path": "/human", "name": "人员管理"}
+        ]
+    }
+]

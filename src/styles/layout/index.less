@@ -1,0 +1,87 @@
+.main-layout {
+    .rel-cls();
+    padding: 48px 0 0 240px;
+    nav {
+        .abs-cls();
+        width: 100%;
+        height: 48px;
+        background-color: #fff;
+        box-shadow: 0 0 10px #eee;
+        z-index: 10;
+        .brand {
+            .rel-cls();
+            overflow: hidden;
+            >.logo {
+                float: left;
+                position: relative;
+                height: 48px;
+                padding-left: 16px + 48px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: @ced;
+                line-height: 48px;
+                &:before {
+                    content: '';
+                    .abs-cls(@left: 16px);
+                    height: 48px;
+                    width: 48px;
+                    background: url(../../images/logo.png) center center / 22px 22px no-repeat;
+                }
+            }
+            >.close,
+            >.info {
+                float: right;
+                position: relative;
+                height: 48px;
+                width: 48px;
+                background: url(../../images/info-icon.png) center center / 20px 20px no-repeat;
+                cursor: pointer;
+                user-select: none;
+            }
+            >.bread{
+                display: inline-block;
+                height: 48px;
+                line-height: 48px;
+                font-size: .8rem;
+                margin-left: 24px;
+            }
+            >.close {
+                background-image: url(../../images/exit-icon.png);
+            }
+            >.user {
+                float: right;
+                position: relative;
+                height: 48px;
+                padding-left: 30px;
+                font-size: .7rem;
+                line-height: 48px;
+                color: #666;
+                &:before {
+                    content: '';
+                    .abs-cls();
+                    height: 48px;
+                    width: 30px;
+                    background: url(../../images/user-man.png) center center / 20px 20px no-repeat;
+                }
+                &.girl:before {
+                    background-image: url(../../images/user-girl.png);
+                }
+            }
+        }
+    }
+    aside {
+        .abs-cls(@top: 48px);
+        width: 240px;
+        bottom: 0;
+        background: #233644;
+        overflow-x: hidden;
+        z-index: 9;
+    }
+    article {
+        .rel-cls();
+        padding: 16px;
+        background: #f8f8f8;
+        z-index: 8;
+        overflow-x: hidden;
+    }
+}

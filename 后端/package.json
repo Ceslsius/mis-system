@@ -1,0 +1,22 @@
+{
+  "name": "mis-server",
+  "version": "1.0.0",
+  "description": "mis system service package",
+  "main": "server.js",
+  "scripts": {
+    "dev": "supervisor server.js",
+    "start": "pm2 start server.js",
+    "stop": "pm2 stop server"
+  },
+  "keywords": [
+    "mis"
+  ],
+  "author": "sudeming@1000phone.com",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.27",
+    "multer": "^1.4.2"
+  }
+}
